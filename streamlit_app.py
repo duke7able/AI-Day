@@ -1,4 +1,9 @@
 import streamlit as st
+import subprocess
+
+# Install required package
+subprocess.run(["pip", "install", "-q", "-U", "google-genai"], check=True)
+
 from google import genai
 
 # Streamlit UI
